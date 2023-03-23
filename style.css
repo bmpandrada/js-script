@@ -22,7 +22,7 @@ header{
     padding: 2rem 0;
     position: fixed;
     width: 100%;
-    z-indez:9999;
+    z-index: 9999;
 }
 
 .list-logo{
@@ -100,6 +100,7 @@ main{
     background: rgb(1, 84, 139);
     width: auto;
     backface-visibility: hidden;
+    z-index: 0;
 }
 
 h1{
