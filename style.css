@@ -104,6 +104,13 @@ main{
     backface-visibility: hidden;
     z-index: 0;
 }
+.mainNav ul li:hover{
+    background-color: #eee;
+ 
+}
+.mainNav ul li a:hover{
+    color: #333;
+}
 
 h1{
     font-size: 2rem;
