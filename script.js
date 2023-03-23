@@ -3,13 +3,20 @@
 
 const navbar = document.querySelector('.burger');
 const navbarItems = document.querySelector('.mobile');
-const closeLinks = document.querySelectorAll('.mobile li')
+const closeLinks1 = document.querySelectorAll('.mobile li')
+const closeLinks = document.querySelectorAll('.mobile ul ul li')
 
 
 for(let i = 0; i < closeLinks.length; i++){
     closeLinks[i].addEventListener('click', function(){
         navbarItems.classList.toggle('navItem')
     })
+}
+
+for(let i = 0; i < closeLinks1.length; i++){
+  closeLinks1[i].addEventListener('click',function(){
+    navbarItems.classList.toggle('navItem')
+  })
 }
 navbar.addEventListener('click', function(){
    navbarItems.classList.toggle('navItem')

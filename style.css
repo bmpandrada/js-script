@@ -66,7 +66,9 @@ nav ul {
     text-decoration: none;
     color: #eee;
   }
-  
+  nav ul ul{
+    border: 1px solid greenyellow;
+  }
   nav ul ul li {
     display: block;
     background-color: darkcyan;
@@ -303,11 +305,12 @@ h1{
     }
     table td{
         font-size: .75rem;
-       
         background-color: black;
         flex-wrap: wrap;
     }
-    
+    nav ul ul{
+        top: 0;
+    }
    
 
 }
