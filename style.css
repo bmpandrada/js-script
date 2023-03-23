@@ -23,24 +23,31 @@ header{
     position: fixed;
     width: 100%;
     z-index: 9999;
+    
 }
+
 
 .list-logo{
     color: #eee;
     font-weight: 500;
+    display: inline-block;
+   
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
   }
   
   nav li {
     position: relative;
     display: inline-block;
     padding: 10px;
+  
   }
+  
 
   nav ul ul {
     position: absolute;
@@ -49,22 +56,26 @@ nav ul {
     width: 200px;
     display: none;
     z-index: 9;
+
   }
   
   nav ul ul ul {
     top: 0;
     left: 100%;
     width: 200px;
+    
   }
   
   nav li:hover > ul {
     display: block;
+    
   }
   
   nav a {
     display: block;
     text-decoration: none;
     color: #eee;
+    
   }
   nav ul ul{
     border: 1px solid greenyellow;
@@ -104,12 +115,12 @@ main{
     backface-visibility: hidden;
     z-index: 0;
 }
-.mainNav ul li:hover{
+ul li a:hover{
     background-color: #eee;
- 
+    color: black;
 }
-.mainNav ul li a:hover{
-    color: #333;
+ul li a{
+    padding: .5rem;
 }
 
 h1{
@@ -318,6 +329,5 @@ h1{
     nav ul ul{
         top: 0;
     }
-   
 
 }
