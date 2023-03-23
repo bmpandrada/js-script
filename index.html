@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="list-logo">javascript</h1>
+        <nav class="mainNav">
+            <ul>
+              <li><a href="#home">Function</a></li>
+                <li><a href="#array">array</a>
+                <ul>
+                  <li><a href="#fArray">function-array</a></li>
+                  <li><a href="#Destructuring">Destructuring-Array</a></li>
+                  <li><a href="#LoopA"> Looping-Arrays</a></li>
+                </ul>
+              </li>
+              <li><a href="#object">object</a>
+                <ul>
+                  <li><a href="#ObjectD">Destructuring-Object</a></li>
+                  <li><a href="#objectL"> Object-Literals</a></li>
+                  <li><a href="#om">Object|Maps</a></li>
+                  <li><a href="#Spread"> Spread-Operator</a></li>
+                </ul>
+              </li>
+              <li><a href="#loop">While-Loop</a>
+                <ul>
+                  <li><a href="#loop">loop</a></li>
+                  <li><a href="#While">while</a></li>
+                  <li><a href="#dom">dom</a></li>
+                  <li><a href="#Chaining">  Optional-Chaining</a></li>
+                </ul>
+              </li>
+              <li><a href="#scope">scope</a>
+                <ul>
+                  <li><a href="#hoisting">hoisting</a></li>
+                  <li><a href="#this">this</a></li>
+                  <li><a href="#">Submenu Item 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#ve">  keys|Values|Entries</a>
+                <ul>
+                  <li><a href="#Maps">  Map-Iterations</a></li>
+                  <li><a href="#om">   Object|Maps</a></li>
+                  <li><a href="#">Submenu Item 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Menu Item 3</a>
+                <ul>
+                  <li><a href="#">Submenu Item 1</a></li>
+                  <li><a href="#">Submenu Item 2</a></li>
+                  <li><a href="#">Submenu Item 3</a></li>
+                </ul>
+              </li>
+              <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            </ul>
+          </nav>
+
+
+          <nav  class="mobile">
+            <ul>
+              <li><a href="#home">Function</a></li>
+                <li><a href="#array">array</a>
+                <ul>
+                  <li><a href="#fArray">function-array</a></li>
+                  <li><a href="#Destructuring">Destructuring-Array</a></li>
+                  <li><a href="#LoopA"> Looping-Arrays</a></li>
+                </ul>
+              </li>
+              <li><a href="#object">object</a>
+                <ul>
+                  <li><a href="#ObjectD">Destructuring-Object</a></li>
+                  <li><a href="#objectL"> Object-Literals</a></li>
+                  <li><a href="#om">Object|Maps</a></li>
+                  <li><a href="#Spread"> Spread-Operator</a></li>
+                </ul>
+              </li>
+              <li><a href="#loop">While-Loop</a>
+                <ul>
+                  <li><a href="#loop">loop</a></li>
+                  <li><a href="#While">while</a></li>
+                  <li><a href="#dom">dom</a></li>
+                  <li><a href="#Chaining">  Optional-Chaining</a></li>
+                </ul>
+              </li>
+              <li><a href="#scope">scope</a>
+                <ul>
+                  <li><a href="#hoisting">hoisting</a></li>
+                  <li><a href="#this">this</a></li>
+                  <li><a href="#">Submenu Item 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#ve">  keys|Values|Entries</a>
+                <ul>
+                  <li><a href="#Maps">  Map-Iterations</a></li>
+                  <li><a href="#om">   Object|Maps</a></li>
+                  <li><a href="#">Submenu Item 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Menu Item 3</a>
+                <ul>
+                  <li><a href="#">Submenu Item 1</a></li>
+                  <li><a href="#">Submenu Item 2</a></li>
+                  <li><a href="#">Submenu Item 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          
+    </header>
+<main>
+    <section class="lecture-1">
+      <h2 class="title-js">Javascript</h2>
+      <div class="row" id="function">
+          <div class="col-1" id="home">
+              <h1>lecture</h1>
+              <p>Functions Calling Other Functions</p>
+          </div>
+          <div class="col-2">
+          
+            <p>  function multi(x){<br>
+                  const multiply = x * 2<br>
+                  return multiply;<br>
+                  }
+              </p>
+              <br>
+                <p> function fruitProcessor(blue, red){<br>
+                      const blueProcess = multi(blue);<br>
+                      const redProcess = multi(red)<br>
+                      return `the apple is ${blueProcess} <br>
+                      and oranges is ${red}`<br>
+                  }
+              </p>
+              <br>
+                  const output = fruitProcessor(22,10);<br>
+                  console.log(output)<br>
+                  <br>
+                  <h1 class="answer">Output: <span class="h1">The apple is 44 and oranges is 20</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="array">
+              <h1>lecture</h1>
+              <p>Introduction array</p>
+          </div>
+          <div class="col-2">
+              <p>function sample:  const ageCal = (x) => {
+                  return 2023 - x;
+              }</p><br><br>
+                  <p>1. const friend = ['Bruce', 'Bea', 'Phil'];<br>
+                      console.log(friend);<br>
+                      console.log(friend[friend.length - 1])</p>
+                      <br>
+                      <p>2. const years  = new Array(1990, 1991, 1989);
+                          <br> console.log(years)</p>
+
+                      <br>
+                      <br>
+                      <p>
+                          const yearss = [1990, 1992, 2000];<br>
+
+const answ1 =  ageCal(yearss[0])<br>
+const answ2 =  ageCal(yearss[1])<br>
+const answ3 =  ageCal(yearss[yearss.length - 1])<br>
+const answer  = [answ1, answ2, answ3]<br>
+console.log(answer);<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">Ans 1. (3) ['Bruce', 'Bea', 'Phil']</span>
+                    &nbsp; <span class="h1">Ans 2. [33, 31, 23]</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="object">
+              <h1>lecture</h1>
+              <p>Introduction Object</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      const person = {<br>
+                          fname:'Milo',<br>
+                          age:32,<br>
+                          hobbies:'Coding',<br>
+                          driving:false,<br>
+                      }<br>
+                      
+                      console.log(person);<br>
+                      
+                      if(person.driving){<br>
+                          console.log('professional driver')<br>
+                      }else{<br>
+                          console.log('not professional drive');<br>
+                      }<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">{fname: 'Milo', age: 32, hobbies: 'Coding', driving: false}</span>
+                    &nbsp; <span class="h1">Not professional drive</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="loop">
+              <h1>lecture</h1>
+              <p>Introduction Loop</p>
+          </div>
+          <div class="col-2">
+                  <p>const person = [<br>
+                      'bruce', 'web developer', 'coffee lover', ['Bea', 'Phil', 'Kath', 'Saki', 'Vits', 'Chy']
+                  ];<br>
+                  <br>
+                  const types= ['bea andrada']
+                  <br>
+                  <br>
+                  for(let i = 0; i < person.length; i++){<br><br>
+                    1. sample: console.log(person[i]);<br>
+                     2. sample: types.push(person[i]);<br><br>
+                      
+                  }<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">1. bruce
+                      web developer
+                      coffee lover
+                      (6) ['Bea', 'Phil', 'Kath', 'Saki', 'Vits', 'Chy']</span>
+                    &nbsp; <span class="h1">2. ['bea andrada', 'bruce', 'web developer', 'coffee lover', Array(6)]</span>  </h1>        
+         
+                    <br> <br>   
+              <p>Another Sample of Loop</p>
+          
+              <p>reverted loop sample syntax only!:</p>
+              <p>for(let i = person.length - 1; i >= 0; i--){<br>
+                  console.log(person[i])
+              };</p><br>
+              <p>Sample of new Items: </p>
+                  <p>const year = [1990,1991,2020];<br><br>
+                      const newYear = [];<br><br>
+                      
+                      for(let i = 0; i < year.length; i++){<br><br>
+                           newYear.push(2023 - year[i])<br><br>
+                          }<br>
+                      
+                          console.log(newYear);<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">[33, 32, 3]</span>
+                   
+          </div>
+      </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="While">
+              <h1>lecture</h1>
+              <p>Introduction While Loop</p>
+          </div>
+          <div class="col-2">
+                  <p>1. let exercise = ['shoulder', 'bicep','tricep','back']<br>
+                      while(exercise.length){<br>
+                          console.log(exercise); <br>
+                          exercise++<br>
+                      }<br>
+                      
+                      2. let dice = Math.trunc(Math.random() * 6) + 1;<br>
+                      while(dice !== 6){<br>
+                          console.log(`dice --> ${dice}`);<br>
+                          dice = Math.trunc(Math.random() * 6) + 1;<br>
+                          if(dice === 6) console.log('end of loop');<br>
+                      }<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">1. ['shoulder', 'bicep', 'tricep', 'back']</span>
+                    &nbsp; <span class="h1">2. dice --> 1 <br> end of loop</span>  </h1>
+                    <br> <br>   
+                    <p>Another Example While Loop</p>
+                    <p>
+                      const calcTip = (bills) => {<br> 
+                          return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;<br> 
+                      }<br> 
+                      <br> 
+                      let bills = [22, 295, 176, 440, 37, 105, 10,1100,86,52]<br> 
+                      const tips = []<br> 
+                      let totals = []<br> 
+                      for(let i = 0; i < bills.length; i++){<br> 
+                          const tip = calcTip(bills[i]);<br> 
+                          tips.push(tip);<br> 
+                          totals.push(tip + bills[i]);<br> 
+                      }<br> 
+                      
+                      console.log(tips, totals);<br> 
+                    </p>
+                    <h1 class="answer">Output: <span class="h1">tips: [4.4, 44.25, 26.4, 88, 7.4, 15.75, 2, 220, 12.9, 7.8] <br>
+                  totals: [26.4, 339.25, 202.4, 528, 44.4, 120.75, 12, 1320, 98.9, 59.8]</span></h1>
+                  <br> <br>   
+                  <p>Another Last While Loop</p>
+                  <p>
+                      const calcAverage = (arr) => {<br>
+                          let sum = 0;<br>
+                          for(let i = 0; i < arr.length; i++){<br>
+                              sum += arr[i]<br>
+                          }<br>
+                          console.log(sum);<br>
+                      }<br>
+                      <br>
+                      calcAverage([5,5])<br>
+                  </p>
+                  <h1 class="answer">Output: <span class="h1">10</span>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="fArray">
+              <h1>lecture</h1>
+              <p>Introduction Function + Array</p>
+          </div>
+          <div class="col-2">
+                  <p>1. const isSaving = [3,-2,-6-1, 'error', 9, 13, 17, 15, 14, 9, 5];<br><br>
+
+                      const calTemp = (isSaving) => {<br>
+                          let max = isSaving[0]<br>
+                          let min = isSaving[0]<br>
+                          for(let i = 0; i < isSaving.length; i++){<br>
+                              const setSaving = isSaving[i]<br><br>
+                      
+                              if(setSaving > max) max = setSaving;<br>
+                              if(setSaving < min) min = setSaving;<br>
+                          } <br>
+                          console.log(max, min);   <br>
+                      }<br><br>
+                      
+                      
+                      calTemp([3, 7, 4, 1, 8])<br>
+                      </p><br>
+
+
+
+                      <p>
+                        2.  const stateChange = (value) => {<br>
+                              let fare = 20;<br>
+                              const change = value - fare<br>
+                              return change<br>
+                            }<br><br>
+                            
+                            const isSales = (value) => {<br>
+                              let change = [];<br>
+                              for(let i = 0; i < value.length; i++){<br>
+                                change.push(stateChange(value[i]));<br>
+                              }<br><br>
+                               const message = (`${change.length} passenger has change ${change}`);
+                               console.log(message);<br>
+                            }<br><br>
+                            
+                            isSales([100, 200, 300, 300]);<br>
+                      </p>
+
+
+                  <h1 class="answer">Output: <span class="h1">ans 1.) 8 1</span>
+                    &nbsp; <span class="h1">ans 2.) 4 passenger has change 80,180,280,280</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row" id="container-dom">
+          <div class="col-1" id="dom">
+              <h1>lecture</h1>
+              <p>Introduction Dom</p>
+               <span class="links-title">Sample App:</span><li>
+                  <a class="links" href="/app.html">Guess my number</a>
+               </li>
+              <li><a class="links" href="/modal.html">Modal</a></li></ul>
+          </div>
+          <div class="col-2">
+
+              <p>
+                  const number = document.getElementById('num');<br>
+const btn = document.querySelector('.btn');<br><br>
+
+
+
+btn.addEventListener('click',function(){<br>
+  let random = Math.trunc(Math.random()*6)+1;<br>
+  number.innerHTML=random<br>
+  if(random === 5){<br>
+     number.innerHTML='win'<br>
+     document.body.style.color='yellow'<br>
+     number.style.fontSize='4.5rem'<br>
+  }else{<br>
+      document.body.style.color=''<br>
+      number.style.fontSize=''<br>
+  }<br>
+  console.log(random);<br>
+})<br>
+              </p>
+
+
+                  
+                      <button class="btn" >click</button>
+                  <h1 class="answer">Output: guess my num <span class="h1" id="num"> </span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="scope">
+              <h1>lecture</h1>
+              <p>Introduction 3 types of sscope</p>
+          </div>
+          <div class="col-2">
+                  <p>1. Global Scope &nbsp; 2. Function Scope &nbsp; 3. Block Scope
+                      </p><br>
+                     <p>1. Global Scope</p> 
+                      <li>Outside of any function or block</li>
+                      <li>Variables declared in global</li>
+                      <br>
+                      Ex: const me = 'Jordan'<br>
+                      <br>
+                      <p>2.Function Scope</p> 
+                      <li>Variable are accessible only inside function, not outside.</li>
+                      <li>Also called local scope</li>
+                      <br>
+                    <p>Ex: function calcAge(bday){<br>
+                      const now = 2023;<br>
+                      const age = now - bday;<br>
+                      return age;<br></p>  
+                      }<br>
+                      <br>
+                     <p>3. Block Scope</p> 
+                      <li>Variables are accessible only inside block</li>
+                      <li>However, this only applies to let and const Variables!</li>
+                      <li>Functions are also block scoped(only in strict mode)</li>
+                      <br>
+                  <p>    Ex: if(year >= 1981 && year <= 1996){<br>
+                          const millenial = true;<br>
+                          const food = 'Avocado toast';<br>
+                      } <--- Ex: if block, for loop block, etc.<br>
+                      console.log(millenial); <br></p>
+                  <h1 class="answer">Output: <span class="h1">ReferenceError</span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="hoisting">
+              <h1>lecture</h1>
+              <p>Introduction Hoisting the TDZ(temporal dead zone)</p>
+              <br>
+              <table class="tables">
+                  <tbody>
+                  <tr>
+                  <td>component</td>
+                  <td>Hoisted</td>
+                  <td>Initial Value</td>
+                  <td>Scope</td>
+                  </tr>
+                  <tr>
+                  <td>functiion declaration</td>
+                  <td>yes</td>
+                  <td>actual function</td>
+                  <td>block</td>
+                  </tr>
+                  <tr>
+                  <td>var variables</td>
+                  <td>yes</td>
+                  <td>undefined</td>
+                  <td>function</td>
+                  </tr>
+                    <tr>
+                  <td>let and const variable</td>
+                  <td>no</td>
+                  <td>unintialized, TDZ</td>
+                  <td>block</td>
+                  </tr>
+                    <tr>
+                  <td>function expression and arrow</td>
+                  <td>depends</td>
+                  <td>depends</td>
+                  <td>depends</td>
+                  </tr>
+                    
+                  </tbody>
+                  </table>
+                  <p class="description">Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Inevitably, this means that no matter where functions and variables are declared, they are moved to the top of their 
+                      scope regardless of whether their scope is global or local.</p>
+          </div>
+          
+      </div>
+
+      <div class="row">
+          <div class="col-1">
+              <p>Hoisting and TDZ sample</p>
+          </div>
+          <div class="col-2">
+                  <p>console.log(addDecl(2,3));<br>
+                      console.log(addExpr(2,3));<br>
+                      console.log(addArrow(2,3));<br>
+                      <br>
+                      function  addDecl(a,b){<br>
+                      return a+b<br>
+                      }<br><br>
+                      const addExpr = function(a, b){<br>
+                          return a + b;<br>
+                      }<br><br>
+                      const addArrow = (a,b) => a + b<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"></span>
+                    &nbsp; <span class="h1">addDecl: 5 &nbsp; addExpr:  ReferenceError &nbsp;addArrow: ReferenceError </span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="this">
+              <h1>lecture</h1>
+              <p>Introduction 'This'</p>
+              <p class="description">“This” keyword refers to an object that is executing the current piece of code. It references the object that is executing the current function. If the function being referenced is a regular function, “this” references the global object. If the function that is being referenced is a method in an object, 
+                  “this” references the object itself.
+                  </p>
+          </div>
+          <div class="col-2">
+                  <p >Sample: 1.<br><br>
+                      const bruce = {<br>
+                          name:'bruce',<br>
+                          year:1999,<br>
+                          calAge: function(){<br>
+                              return 2023 - this.year<br>
+                          }<br>
+                         
+                      };<br>
+                      
+                       
+                      console.log(bruce.calAge());<br>
+                      </p>
+                      <br>
+                      <p>Sample: 2.<br><br>
+                          
+                          const bruce ={<br>
+                              year:1998,<br>
+                              calAge : function(){<br>
+                                  console.log(2023 - this.year);<br>
+                              }<br>
+                          }<br><br>
+                          
+                          bruce.calAge()<br>
+                          const bea = {<br>
+                              year:2001,<br>
+                          };<br>
+                          <br>
+                          bea.calAge = bruce.calAge;<br>
+                          bea.calAge();<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"> Sample: 1.) 25 &nbsp; Sample: 2.) 22</span>
+                   
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="Destructuring">
+              <h1>lecture</h1>
+              <p>Introduction Destructuring Arrays</p>
+          </div>
+          <div class="col-2">
+                  <p>const restaurant = {<br>
+                      name: 'Classico Italiano',<br>
+                      location: 'Via Angelo Tavanti 23, Firenze, Italy',<br>
+                      categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],<br>
+                     
+                    };<br><br>
+                      </p>
+
+                      <p>
+                          const arr = [2,3,4];<br>
+                              const a = arr[0];<br>
+                              const b = arr[1];<br>
+                              const c = arr[2];<br>
+                              <br>
+                              const [x,y,z]= arr;<br>
+                              1. console.log(x,y,z);<br>
+                              <br>
+                              const [a1, b1, c1] = restaurant.categories;<br>
+                              2. console.log(a1, b1, c1);<br>
+                              3. console.log(c1);<br><br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">1.) 2 3 4</span>  &nbsp;
+                      <span class="h1">2.) Italian Pizzeria Vegetarian</span>
+                    &nbsp; <span class="h1">3.) Vegetarian</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="Destructuring">
+              <h1>Destructuring Arrays Examples</h1>
+          </div>
+          <div class="col-2">
+              
+                  <p>const restaurant = {<br>
+                      order: function(starterIndex, mainIndex){<br>
+                        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]]<br>
+                      }<br>
+                    };<br><br>
+                    
+                    console.log(restaurant.order(2,0));<br>
+                      </p><br>
+
+                  <p> Another Sample:<br>
+                      const nested = [2,4, [5,6]]<br><br>
+
+
+                      const [i, , [j, k]] = nested;<br>
+                      console.log(i, j, k);<br>
+                  </p>
+                  <h1 class="answer">Output: <span class="h1">1.) (2) ['Garlic Bread', 'Pizza']</span>
+                    &nbsp; <span class="h1">2.) 2 5 6</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="ObjectD">
+              <h1>lecture</h1>
+              <p>Introduction Object Destructuring</p>
+          </div>
+          <div class="col-2">
+                  <p>const restaurant = {<br>
+                      name: 'Classico Italiano',<br>
+                      location: 'Via Angelo Tavanti 23, Firenze, Italy',<br>
+                      categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],<br>
+                      starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],<br>
+                      mainMenu: ['Pizza', 'Pasta', 'Risotto'],<br><br>
+                    
+                      openingHours: {<br>
+                        thu: {<br>
+                          open: 12,<br>
+                          close: 22,<br>
+                        },<br>
+                        fri: {<br>
+                          open: 11,<br
+                          close: 23,<br>
+                        },<br>
+                        sat: {<br>
+                          open: 0, // Open 24 hours<br>
+                          close: 24,<br>
+                        },<br>
+                      },<br>
+                      order: function(mainA, mainB){<br>
+                        return [this.starterMenu[mainA], this.mainMenu[mainB]]<br>
+                      }<br>
+                    };<br>
+                    <br>
+                   Ans 1:  console.log(restaurant.openingHours);<br><br>
+                    
+                    const {name:restaurantName, <br>
+                      openingHours: {...hours}, <br>
+                      categories:tags,} = restaurant<br><br>
+                      Ans 2: console.log(`Company Name: ${restaurantName}  menus: '${tags}' and schedule`, hours );<br>
+                      <br>
+                      const {menu =[], starterMenu: first=[]} = restaurant;  <br>
+                      Ans 3:  console.log(menu, first);  <br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"> Ans 1: {thu: {…}, fri: {…}, sat: {…}}</span>
+                    &nbsp;  &nbsp; <span class="h1">Ans 2: Company Name: Classico Italiano  menus: 'Italian,Pizzeria,Vegetarian,Organic' and schedule {thu: {…}, fri: {…}, sat: {…}}</span>  
+                    &nbsp;   &nbsp;<span class="h1">Ans 3: [] (4) ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad']</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="Spread">
+              <h1>lecture</h1>
+              <p>Introduction Spread Operator</p>
+          </div>
+          <div class="col-2">
+                  <p>const arr = [7,8,9];<br>
+                      const setArr = [1,2,3, ...arr]<br>
+                     Ans 1.) console.log(setArr);<br><br>
+                      </p>
+
+                      <p>
+                      const newFoods = [...restaurant.categories, 'Fish Tuna'];<br>
+                     Ans 2.) console.log(newFoods);<br><br>
+
+                      const statePerson = {<br>
+                      name:'bruce'<br>
+                      };<br>
+                      const setPerson = {...statePerson, hobbies:'basket ball'};<br>
+                     Ans 3.) console.log(setPerson);<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">Ans 1.) (6) [1, 2, 3, 7, 8, 9]</span>
+                    &nbsp; <span class="h1">2.) ['Italian', 'Pizzeria', 'Vegetarian', 'Organic', 'Fish Tuna']</span>   
+                    &nbsp; <span class="h1"></span> &nbsp; <span class="h1">3.) {name: 'bruce', hobbies: 'basket ball'}</span></h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="LoopA">
+              <h1>lecture</h1>
+              <p>Introduction Loop Arrays</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      const restaurant = {<br>
+                          starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],<br>
+                          mainMenu: ['Pizza', 'Pasta', 'Risotto'],<br><br>
+
+                          
+                      const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];<br><br>
+                  </p>
+
+
+
+                  <p>for(const item of menu) <br>
+                     Ans 1.) console.log(item);<br><br>
+                      
+                      for(const [item, product] of menu.entries()){<br>
+                       Ans 2.) console.log(`${item + 1}: ${product}`);<br>
+                      }<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">Ans1.) Focaccia
+                      Bruschetta,
+                       Garlic Bread,
+                       Caprese Salad,
+                       Pizza,
+                      Pasta,
+                      Risotto</span>
+                    &nbsp;<br> <span class="h1">Ans2.)1: Focaccia
+                       2: Bruschetta,
+                      3: Garlic Bread,
+                      4: Caprese Salad,
+                      5: Pizza,
+                       6: Pasta,
+                       7: Risotto</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="objectL">
+              <h1>lecture</h1>
+              <p>Introduction Enhanced object literals</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                  const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];<br><br>
+
+                  const openingHours = {<br>
+                  [weekdays[0]]: {<br>
+                  open: 12,<br>
+                  close: 22,<br>
+                  },<br>
+                  [weekdays[4]]: {<br>
+                  open: 11,<br>
+                  close: 23,<br>
+                  },<br>
+                  [weekdays[5] +'-'+ weekdays[6] ]:{<br>
+                  open: 0,<br>
+                  close: 24,<br>
+                  },<br>
+                  };<br><br>
+                  </p>
+
+                  <p>const openingHours = {<br>
+                      thu: {<br>
+                        open: 12,<br>
+                        close: 22,<br>
+                      },<br>
+                      fri: {<br>
+                        open: 11,<br>
+                        close: 23,<br>
+                      },<br>
+                      sat: {<br>
+                        open: 0,<br>
+                        close: 24,<br>
+                      },<br>
+                    };<br><br>
+                    
+                    
+                    const restaurant = {<br>
+                      starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],<br>
+                      openingHours,<br>
+                      order: (ing1, ing2, ing3) =>{<br>
+                        return console.log(`${restaurant.starterMenu[ing1]}<br>
+                         nice ${restaurant.starterMenu[ing2]} <br>nice nice ${restaurant.starterMenu[ing3]}`);<br>
+                      }<br>
+                    };<br><br>
+                    
+                    console.log(restaurant);<br>
+                    restaurant.order(1,2,3);<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">Ans 1.) openingHours
+                      : 
+                      {thu: {…}, fri: {…}, sat: {…}}
+                      order
+                      : 
+                      (ing1, ing2, ing3) => {…}
+                      starterMenu
+                      : 
+                      (4) ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad']
+                      [[Prototype]]
+                      : 
+                      Object</span><br><br>
+                    &nbsp; <span class="h1">Ans 2.) Bruschetta nice Garlic Bread nice nice Caprese Salad</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="Chaining">
+              <h1>lecture</h1>
+              <p>Introduction Optional Chaining</p>
+          </div>
+          <div class="col-2">
+                  <p>const weekdays = ['mon', 'tue', 'wed', <br>
+                      'thu', 'fri', 'sat', 'sun'];<br><br>
+
+                      const openingHours = {<br>
+                        [weekdays[0]]: {<br>
+                          open: 12,<br>
+                          close: 22,<br>
+                        },<br>
+                        [weekdays[4]]: {<br>
+                          open: 11,<br>
+                          close: 23,<br>
+                        },<br>
+                        [weekdays[5] +'-'+ weekdays[6] ]:{<br>
+                          open: 0,<br>
+                          close: 24,<br>
+                        },<br>
+                      };<br><br>
+                      
+
+                      for(const day of weekdays){<br>
+                          const open = restaurant.openingHours[day]?.open;<br>
+                          console.log(` on ${day}, we open at ${open ?? 'not available'}`);<br>
+                        }<br>
+                        
+                      </p>
+                  <h1 class="answer">Output: <br><span class="h1"> on mon, we open at 12<br>
+                      on tue, we open at not available<br>
+                      on wed, we open at not available<br>
+                      on thu, we open at not available<br>
+                      on fri, we open at 11<br>
+                      on sat, we open at not available<br>
+                      on sun, we open at not available</span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="ve">
+              <h1>lecture</h1>
+              <p>Introduction keys|Values|Entries</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']; <br>
+                      <br>
+const openingHours = {<br>
+[weekdays[1]]: {<br>
+  open: 12,<br>
+  close: 22,<br>
+},<br>
+[weekdays[0]]: {<br>
+  open: 11,<br>
+  close: 23,<br>
+},<br>
+[weekdays[3] +'-'+ weekdays[6] ]:{<br>
+  open: 0,<br>
+  close: 24,<br>
+},<br>
+};<br><br>
+
+
+const restaurant = {<br>
+  openingHours,<br>
+};<br><br>
+
+Keys:<br><br>
+for(const day of Object.keys(openingHours)){<br>
+  console.log(`${day} schedule`);<br>
+}<br><br>
+
+Entries:<br><br>
+const detail =[];<br>
+for(const [i, j] of weekdays.entries()){<br>
+detail.push(i + 1, j)<br>
+<br>
+}<br>
+console.log(detail);
+                  </p>
+                     
+                  <h1 class="answer">Output: <span class="h1">Keys: <br>
+                      tue schedule
+                       mon schedule
+                      thu-sun schedule</span><br>
+                      &nbsp; <span class="h1">Entries: <br>
+                          [1, 'mon', 2, 'tue', 3, 'wed', 4, 'thu', 5, 'fri', 6, 'sat', 7, 'sun']</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="Maps">
+              <h1>lecture</h1>
+              <p>Introduction Map Iterations</p>
+          </div>
+          <div class="col-2">
+                  <p>const rest = new Map();<br>
+                      rest.set('name', 'classico');<br>
+                      rest.set(1, 'fire');<br>
+                      rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian','organic'])<br>
+                      .set(true, 'we are open')<br>
+                      console.log(rest);<br><br>
+                      
+                      console.log(rest.get(true));<br>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1">log 1: Map(4) {'name' => 'classico', 1 => 'fire', 'categories' => Array(4), true => 'we are open'}</span>
+                   <br> <span class="h1">log 2: we are open</span>  </h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-1" id="om">
+              <h1>lecture</h1>
+              <p>Introduction Object|Maps</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      Array:<br><br>
+                      const task = ['code', 'Eat','code', ];<br>
+
+                      console.log(task);
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"> Avoid Duplicate</span>
+                    &nbsp; <span class="h1"></span> (3) ['code', 'Eat', 'code']</h1><br><br>
+                    <p>
+                      Sets Array:<br><br>
+                      const task = new Set(['code', 'Eat','code', ]);<br>
+
+                      console.log(task);
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"> Avoid Duplicate</span>
+                    &nbsp; <span class="h1"></span> Set(2) {'code', 'Eat'} </h1><br><br>
+  
+                      <p>
+                          <p> Object:<br><br>
+                          const task1 = {<br>
+                              task:'code',<br>
+                              date:'today',<br>
+                              repeat:true<br>
+                            };
+                            
+                            console.log(task1);
+                      </p>
+                      <h1 class="answer">Output: <span class="h1"> can convert to map</span>
+                          &nbsp; <span class="h1"></span> {task: 'code', date: 'today', repeat: true}</h1><br><br>
+                                  <p> Maps:<br><br>
+                                      const task2 = new Map([<br>
+['task','code'],<br>
+['date','today'],<br>
+[false, 'start coding']<br>
+]);<br>
+
+console.log(task2);<br>
+                                  </p>
+                                  <h1 class="answer">Output: <span class="h1"> use when you simply need to map key values</span>
+                                      &nbsp; <span class="h1"></span> Map(3) {'task' => 'code', 'date' => 'today', false => 'start coding'}</h1><br><br>
+          
+                  
+                                      <p>Example cases <br><br>
+                                      
+                                          const gameEvents = new Map([<br>
+                                          [17,'goal'],<br>
+                                          [36, 'subtitute'],<br>
+                                          [47, 'goal'],<br>
+                                          [61, 'yellow card'],<br>
+                                          [69, 'red card'],<br>
+                                          [70, 'subtitute'],<br>
+                                          [72, 'subtitute'],<br>
+                                          [76, 'goal'],<br>
+                                          [86, 'goal'],<br>
+                                          [92, 'yellow card']<br>
+                                        ])<br><br>
+                                        
+                                        
+                                        const events = new Set(gameEvents.values());<br>
+                                        console.log(events);
+                                      
+                                      
+                                      </p>
+                                      <h1 class="answer">Output: <span class="h1"> *use new Set to avoid dupli.</span>
+                                          &nbsp; <span class="h1"></span> Set(4) {'goal', 'subtitute', 'yellow card', 'red card'}</h1><br><br>
+  </h1>
+                                         <p>
+                                          
+                                          gameEvents.delete(64);<br>
+
+
+pop deleted last element<br><br>
+const time = [...gameEvents.keys()].pop() <br>
+//17, 36, 47, 61, 69, 70, 72, 76, 86, 92<br><br>
+console.log(time);
+
+
+console.log(`an event happend, on average, every ${time / gameEvents.size }`);
+                                         </p> 
+
+
+                                           <h1 class="answer">Output: <span class="h1"> 'goal', 'subtitute', 'yellow card', 'red card'<br></span>
+                                              &nbsp; <span class="h1"></span> an event happend, on average, every 9.2</h1><br><br>
+      </h1>
+<p>
+  for(const [key, value] of gameEvents){<br>
+      const half = key <= 45 ? 'FIRST' : 'SECOND'<br>
+      console.log(`[${half} half], ${key} ${value}`);<br>
+    }
+</p>
+
+<h1 class="answer">Output: <span class="h1">
+  [FIRST half], 17 goal<br>
+[FIRST half], 36 subtitute<br>
+[SECOND half], 47 goal<br>
+[SECOND half], 61 yellow card<br>
+[SECOND half], 69 red card<br>
+[SECOND half], 70 subtitute<br>
+[SECOND half], 72 subtitute<br>
+[SECOND half], 76 goal<br>
+[SECOND half], 86 goal<br>
+[SECOND half], 92 yellow card<br>
+  </span>
+  
+
+                      </div>
+      </div>
+      <div class="row">
+          <div class="col-1">
+              <h1>lecture</h1>
+              <p>Introduction Loop</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"></span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-1">
+              <h1>lecture</h1>
+              <p>Introduction Loop</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"></span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-1">
+              <h1>lecture</h1>
+              <p>Introduction Loop</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"></span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-1">
+              <h1>lecture</h1>
+              <p>Introduction Loop</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"></span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-1">
+              <h1>lecture</h1>
+              <p>Introduction Loop</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"></span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-1">
+              <h1>lecture</h1>
+              <p>Introduction Loop</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"></span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-1">
+              <h1>lecture</h1>
+              <p>Introduction Loop</p>
+          </div>
+          <div class="col-2">
+                  <p>
+                      </p>
+                  <h1 class="answer">Output: <span class="h1"></span>
+                    &nbsp; <span class="h1"></span>  </h1>
+          </div>
+      </div>
+      <script src="script.js"></script>
+     </section>
+    </main>
+    
+</body>
+</html>
